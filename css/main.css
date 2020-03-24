@@ -206,15 +206,16 @@
     footer {
         padding: 2rem 0 0 0;
         background-color: #212121;
-        color: white;
+        color: #BDBDBD;
     }
 
     footer h2 {
         font-size: 1.15rem;
+        color: #E0E0E0;
     }
 
     footer a {
-        color: #FFFFFF;
+        color: #BDBDBD;
         text-decoration: none;
     }
 
@@ -285,16 +286,16 @@
     }   
 
     footer .social-links li {
-        margin-right: 1rem;
+        margin: 0 0.5rem;
     }
 
     footer .social-links a {
         display: inline-block;
-        padding: 1rem;
+        padding: 0.5rem;
     }
 
     footer .social-links svg {
-        fill: #FFFFFF;
+        fill: #BDBDBD;
         height: 2rem;
         width: 2rem;
     }
@@ -341,7 +342,8 @@
         margin: 0rem 0 2rem 0;
     }
 
-    .article-banner img {
+    .article-banner img,
+    .article-wide img {
         max-width: 100%;
         height: auto;
     }
@@ -377,7 +379,7 @@
     .article-wide figcaption {
       font-size: 0.8rem;
       color: #757575;
-      padding: 0.5rem;
+      padding: 0.75rem;
     }
 
 
