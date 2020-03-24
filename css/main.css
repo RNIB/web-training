@@ -1,0 +1,719 @@
+  
+  /*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+  
+  /* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+  /*
+   * What follows is the result of much research on cross-browser styling.
+   * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+   * Kroc Camen, and the H5BP dev community and team.
+   */
+  
+  /* ==========================================================================
+     Base styles: opinionated defaults
+     ========================================================================== */
+  
+     html {
+      color: #222;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+    
+    /*
+     * Rremove text-shadow in selection highlight:
+     * https://twitter.com/miketaylr/status/12228805301
+     *
+     * Vendor-prefixed and regular ::selection selectors cannot be combined:
+     * https://stackoverflow.com/a/16982510/7133471
+     *
+     * Customize the background color to match your design.
+     */
+    
+    ::-moz-selection {
+      background: #b3d4fc;
+      text-shadow: none;
+    }
+    
+    ::selection {
+      background: #b3d4fc;
+      text-shadow: none;
+    }
+    
+    /*
+     * A better looking default horizontal rule
+     */
+    
+    hr {
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 1px solid #ccc;
+      margin: 1rem 0;
+      padding: 0;
+    }
+    
+    /*
+     * Rremove the gap between audio, canvas, iframes,
+     * images, videos and the bottom of their containers:
+     * https://github.com/h5bp/html5-boilerplate/issues/440
+     */
+    
+    audio,
+    canvas,
+    iframe,
+    img,
+    svg,
+    video {
+      vertical-align: middle;
+    }
+    
+    /*
+     * Rremove default fieldset styles.
+     */
+    
+    fieldset {
+      border: 0;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /*
+     * Allow only vertical resizing of textareas.
+     */
+    
+    textarea {
+      resize: vertical;
+    }
+    
+    /* ==========================================================================
+       Browser Upgrade Prompt
+       ========================================================================== */
+    
+    .browserupgrade {
+      margin: 0.2rem 0;
+      background: #ccc;
+      color: #000;
+      padding: 0.2rem 0;
+    }
+    
+    /* ==========================================================================
+       Author's custom styles
+       ========================================================================== */
+    
+
+    /*
+    Global
+    */
+
+    p {
+        line-height: 1.75;
+    }
+
+
+
+
+
+    /*
+    Header
+    */
+
+    header {
+        padding: 2rem 0;
+    }
+
+    header .wrapper {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 60rem;
+        margin: auto;
+    }
+      
+
+    header nav ul, 
+    header nav li {
+        display: inline;
+        margin: 0;
+        padding: 0;
+    }   
+
+
+    header a {
+        color: #212121;
+        text-decoration: none;
+    }
+
+    header a:active {
+
+    }
+
+    header a:hover {
+
+    }
+
+    header a:visited {
+
+    }
+
+   
+    .skip-link {
+        background: #212121;
+        color: #FFFFFF;
+        padding: 1rem;
+        position: fixed;
+        top: 0;
+        transform: translateY(-10rem);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .skip-link:focus {
+        transform: translateY(0rem);
+    }
+
+
+
+    .logo {
+        padding: 0 1rem;
+        margin-right: 2rem;
+    }
+    
+    .site-nav {
+      
+    }
+
+    header .site-nav li {
+        margin: 1rem;
+    }
+
+    header .site-nav ul :first-child,
+    header .site-nav ul :last-child {
+        margin: 0;
+    }
+
+    header .site-nav a {
+        padding: 0.5rem;
+    }
+
+
+
+
+
+    /*
+    Footer
+    */
+
+
+    footer {
+        padding: 2rem 0 0 0;
+        background-color: #212121;
+        color: white;
+    }
+
+    footer h2 {
+        font-size: 1.15rem;
+    }
+
+    footer a {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    footer a:active {
+
+    }
+
+    footer a:hover {
+
+    }
+
+    footer a:visited {
+
+    }
+
+
+    footer .wrapper {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-gap: 0 6rem;
+        max-width: 60rem;
+        margin: auto;
+        padding: 1rem 0 3rem 0;
+    }
+
+    
+    footer .about {
+        grid-column: span 4;
+    }
+
+    footer .quick-links {
+        grid-column: span 2;
+    }
+
+    footer .contact {
+        grid-column: span 3;
+    }
+
+
+    footer .quick-links ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        line-height: 2;
+    }
+
+
+    /*push in to compensate for icon link hit area*/
+
+    footer .contact h2, 
+    footer .contact p {
+        padding: 0 1rem;
+    }
+
+    footer .about,
+    footer .quick-links,
+    footer .attribution {
+        padding: 0 1rem;
+    }
+
+
+
+    footer .social-links ul, 
+    footer .social-links li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }   
+
+    footer .social-links li {
+        margin-right: 1rem;
+    }
+
+    footer .social-links a {
+        display: inline-block;
+        padding: 1rem;
+    }
+
+    footer .social-links svg {
+        fill: #FFFFFF;
+        height: 2rem;
+        width: 2rem;
+    }
+
+
+    footer .attribution {
+      background: #CCCCCC;
+      margin: 3rem 0 0 0;
+      padding: 1rem 0;
+      font-size: 0.75rem;
+      color: #000000;
+    }
+
+    footer .attribution p {
+      max-width: 59rem;
+      margin: auto;
+      padding: 0 1rem
+      
+    }
+
+    footer .dev {
+        grid-row-start: 2;
+        grid-column: span 2;
+        text-align: right;
+    }
+
+
+
+
+    /*
+    Main
+    */
+
+
+    .article-banner {
+        background: #212121;
+        text-align: center;
+        padding: 4rem 0;
+    }
+
+    .article-banner h1 {
+        color: #FFFFFF;
+        font-size: 3rem;
+        margin: 0rem 0 2rem 0;
+    }
+
+    .article-banner img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+
+    .article-main {
+        max-width: 40rem;
+        margin: 4rem auto 6rem auto;
+        padding: 0 1rem;
+    }
+
+    .article-main h2 {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    .article-main h3 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    
+    .article-main p {
+      color:#616161;
+    }
+    
+    .article-wide {
+      max-width: 60em;
+      margin: auto;
+      text-align: center;
+    }
+
+    .article-wide figcaption {
+      font-size: 0.8rem;
+      color: #888888;
+      padding: 0.5rem;
+    }
+
+
+  
+    /*
+    Responsive
+    */
+
+    @media screen and (max-width: 40rem) {
+        footer .wrapper {
+            grid-template-columns: minmax(0, 1fr);
+        }  
+    } 
+    
+
+    
+     
+    
+    
+    
+      
+    /*
+     * Visual styling
+     */
+    
+    /*
+     * Layout
+     */
+    
+    
+     
+    
+    
+    /*
+    body {
+        margin: 0 auto;
+        max-width: 56rem;
+        padding: 1rem 0;
+    }
+    */
+     
+      
+  
+    
+     
+    
+    
+    
+    
+    
+    
+    
+    /*
+     * Fonts
+     */
+    
+    
+    @font-face {
+        font-family: 'Open Sans Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Open Sans Regular'), url('../assets/fonts/OpenSans-Regular.woff') format('woff');
+    }
+        
+        
+    @font-face {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Open Sans'), url('../assets/fonts/OpenSans-Regular.woff') format('woff');
+    }
+    
+    
+    @font-face {
+        font-family: 'Open Sans Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Open Sans Italic'), url('../assets/fonts/OpenSans-Italic.woff') format('woff');
+    }
+    
+    
+    @font-face {
+        font-family: 'Open Sans Light';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Open Sans Light'), url('../assets/fonts/OpenSans-Light.woff') format('woff');
+    }
+    
+    
+    @font-face {
+        font-family: 'Open Sans Light Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Open Sans Light Italic'), url('../assets/fonts/OpenSans-LightItalic.woff') format('woff');
+    }
+    
+    
+    @font-face {
+        font-family: 'Open Sans SremiBold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Open Sans SremiBold'), url('../assets/fonts/OpenSans-SremiBold.woff') format('woff');
+    }
+    
+    
+    @font-face {
+        font-family: 'Open Sans SremiBold Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Open Sans SremiBold Italic'), url('../assets/fonts/OpenSans-SremiBoldItalic.woff') format('woff');
+    }
+    
+    
+    @font-face {
+        font-family: 'Open Sans Bold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Open Sans Bold'), url('../assets/fonts/OpenSans-Bold.woff') format('woff');
+    }
+    
+    
+    @font-face {
+        font-family: 'Open Sans Bold Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Open Sans Bold Italic'), url('../assets/fonts/OpenSans-BoldItalic.woff') format('woff');
+    }
+    
+    
+    @font-face {
+        font-family: 'Open Sans ExtraBold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Open Sans ExtraBold'), url('../assets/fonts/OpenSans-ExtraBold.woff') format('woff');
+    }
+    
+    
+    @font-face {
+        font-family: 'Open Sans ExtraBold Italic';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Open Sans ExtraBold Italic'), url('../assets/fonts/OpenSans-ExtraBoldItalic.woff') format('woff');
+    }
+    
+    
+    @font-face {
+        font-family: 'Open Sans Light Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Open Sans Light Regular'), url('../assets/fonts/OpenSans-Light-webfont.woff') format('woff');
+    }
+    
+    
+    @font-face {
+        font-family: 'Open Sans Condensed Bold';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Open Sans Condensed Bold'), url('../assets/fonts/OpenSans-CondBold.woff') format('woff');
+    }
+    
+    body {
+        font-family: "Open Sans";
+      }
+    
+    h1 {
+        font-family: "Open Sans Bold";
+    } 
+    
+    
+      
+    
+    
+    
+    /* ==========================================================================
+       Helper classes
+       ========================================================================== */
+    
+    /*
+     * Hide visually and from screen readers
+     */
+    
+    .hidden {
+      display: none !important;
+    }
+    
+    /*
+    * Hide only visually, but have it available for screen readers:
+    * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+    *
+    * 1. For long content, line feeds are not interpreted as spaces and small width
+    *    causes content to wrap 1 word per line:
+    *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+    */
+    
+    .sr-only {
+      border: 0;
+      clip: rect(0, 0, 0, 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      /* 1 */
+    }
+    
+    /*
+    * Extends the .sr-only class to allow the elrement
+    * to be focusable when navigated to via the keyboard:
+    * https://www.drupal.org/node/897638
+    */
+    
+    .sr-only.focusable:active,
+    .sr-only.focusable:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      white-space: inherit;
+      width: auto;
+    }
+    
+    /*
+    * Hide visually and from screen readers, but maintain layout
+    */
+    
+    .invisible {
+      visibility: hidden;
+    }
+    
+    /*
+    * Clearfix: contain floats
+    *
+    * For modern browsers
+    * 1. The space content is one way to avoid an Opera bug when the
+    *    `contenteditable` attribute is included anywhere else in the document.
+    *    Otherwise it causes space to appear at the top and bottom of elrements
+    *    that receive the `clearfix` class.
+    * 2. The use of `table` rather than `block` is only necessary if using
+    *    `:before` to contain the top-margins of child elrements.
+    */
+    
+    .clearfix:before,
+    .clearfix:after {
+      content: " ";
+      /* 1 */
+      display: table;
+      /* 2 */
+    }
+    
+    .clearfix:after {
+      clear: both;
+    }
+    
+    /* ==========================================================================
+       EXAMPLE Media Queries for Responsive Design.
+       These examples override the primary ('mobile first') styles.
+       Modify as content requires.
+       ========================================================================== */
+    
+    /*
+      @media only screen and (min-width: 35rem) {
+      /* Style adjustments for viewports that meet the condition */
+    }
+    */
+    
+    @media print,
+      (-webkit-min-device-pixel-ratio: 1.25),
+      (min-resolution: 1.25dppx),
+      (min-resolution: 120dpi) {
+      /* Style adjustments for high resolution devices */
+    }
+    
+    /* ==========================================================================
+       Print styles.
+       Inlined to avoid the additional HTTP request:
+       https://www.phpied.com/delay-loading-your-print-css/
+       ========================================================================== */
+    
+    @media print {
+      *,
+      *:before,
+      *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster */
+        box-shadow: none !important;
+        text-shadow: none !important;
+      }
+      a,
+      a:visited {
+        text-decoration: underline;
+      }
+      a[href]:after {
+        content: " (" attr(href) ")";
+      }
+      abbr[title]:after {
+        content: " (" attr(title) ")";
+      }
+      /*
+         * Don't show links that are fragment identifiers,
+         * or use the `javascript:` pseudo protocol
+         */
+      a[href^="#"]:after,
+      a[href^="javascript:"]:after {
+        content: "";
+      }
+      pre {
+        white-space: pre-wrap !important;
+      }
+      pre,
+      blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+      }
+      /*
+         * Printing Tables:
+         * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+         */
+      thead {
+        display: table-header-group;
+      }
+      tr,
+      img {
+        page-break-inside: avoid;
+      }
+      p,
+      h2,
+      h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2,
+      h3 {
+        page-break-after: avoid;
+      }
+    }
