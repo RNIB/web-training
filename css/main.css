@@ -135,6 +135,8 @@
         display: inline;
         margin: 0;
         padding: 0;
+        font-size: 1.15rem;
+        font-family: 'Open Sans SemiBold';
     }   
 
 
@@ -217,6 +219,7 @@
     footer a {
         color: #BDBDBD;
         text-decoration: none;
+        
     }
 
     footer a:active {
@@ -343,7 +346,7 @@
     }
 
     .article-banner img,
-    .article-wide img {
+    .article-main img {
         max-width: 100%;
         height: auto;
     }
@@ -352,18 +355,18 @@
 
     .article-main {
         max-width: 40rem;
-        margin: 4rem auto 6rem auto;
+        margin: 2rem auto 6rem auto;
         padding: 0 1rem;
     }
 
     .article-main h2 {
-        font-size: 2rem;
-        margin-top: 2rem;
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
     }
 
     .article-main h3 {
-        font-size: 1.5rem;
-        margin-top: 1rem;
+        font-size: 1.25rem;
+        margin-top: 0.75rem;
     }
     
     .article-main p {
@@ -376,10 +379,15 @@
       text-align: center;
     }
 
-    .article-wide figcaption {
+    .article-main figure {
+      margin: 2rem 0 0 0;
+      padding: 0;
+    }
+
+    .article-main figcaption {
       font-size: 0.8rem;
       color: #757575;
-      padding: 0.75rem;
+      padding: 0.75rem 0;
     }
 
 
@@ -478,18 +486,18 @@
     
     
     @font-face {
-        font-family: 'Open Sans SremiBold';
+        font-family: 'Open Sans SemiBold';
         font-style: normal;
         font-weight: normal;
-        src: local('Open Sans SremiBold'), url('../assets/fonts/OpenSans-SremiBold.woff') format('woff');
+        src: local('Open Sans SemiBold'), url('../assets/fonts/OpenSans-SemiBold.woff') format('woff');
     }
     
     
     @font-face {
-        font-family: 'Open Sans SremiBold Italic';
+        font-family: 'Open Sans SemiBold Italic';
         font-style: normal;
         font-weight: normal;
-        src: local('Open Sans SremiBold Italic'), url('../assets/fonts/OpenSans-SremiBoldItalic.woff') format('woff');
+        src: local('Open Sans SemiBold Italic'), url('../assets/fonts/OpenSans-SemiBoldItalic.woff') format('woff');
     }
     
     
