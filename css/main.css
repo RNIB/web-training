@@ -108,7 +108,10 @@
         line-height: 1.75;
     }
 
-
+    ul {
+      margin: 0;
+      padding: 0;
+    }
 
 
 
@@ -117,84 +120,145 @@
     */
 
     header {
-        padding: 1.25rem 0;
+        padding: 0;
     }
 
     header .wrapper {
         display: flex;
         flex-flow: row wrap;
         align-items: center;
-        justify-content: space-between;
+        /*justify-content: space-between;*/
         max-width: 60rem;
         margin: auto;
     }
       
-
-    header nav ul, 
-    header nav li {
-        display: inline;
-        margin: 0;
-        padding: 0;
-        font-size: 1.15rem;
-        font-family: 'Open Sans SemiBold';
-    }   
-
-
-    header a {
-        color: #212121;
-        text-decoration: none;
-    }
-
-    header a:active {
-
-    }
-
-    header a:hover {
-
-    }
-
-    header a:visited {
-
-    }
-
-   
     .skip-link {
-        background: #212121;
-        color: #FFFFFF;
-        padding: 1rem;
-        position: fixed;
-        top: 0;
-        transform: translateY(-10rem);
-        transition: transform 0.3s ease-in-out;
-    }
+      background: #212121;
+      color: #FFFFFF;
+      padding: 1rem;
+      position: fixed;
+      top: 0;
+      transform: translateY(-10rem);
+      transition: transform 0.3s ease-in-out;
+  }
 
     .skip-link:focus {
         transform: translateY(0rem);
     }
 
-
-
-    .logo {
+    .logo img {
+        display: block;
         padding: 0 1rem;
-        margin-right: 2rem;
+        margin-right: 4rem;
+        height: 2.2rem;
     }
+
     
-    .site-nav {
-      
+
+
+    /* Menu */
+
+    header .site-nav-top ul {
+      padding: 0;
+      margin: 0;
     }
 
-    header .site-nav li {
-        margin: 1rem;
+    header .site-nav-top > ul, 
+    header .site-nav-top > li {
+        display: inline;
+        margin: 1em;
+        padding: 0;
+        font-size: 1.25rem;
+        font-family: 'Open Sans SemiBold';
+        
+    }   
+
+
+    header .site-nav {
+      line-height: 2.2rem;
     }
 
+
+    header .site-nav-top a {
+      padding: 1rem;
+    }
+
+    header .site-nav-top button {
+      border: none;
+      cursor: pointer;
+      padding: 1rem;
+    }
+
+
+    header .site-nav a {
+        color: #212121;
+        text-decoration: none;
+    }
+
+    header .site-nav a:active {
+
+    }
+
+    header .site-nav a:hover,
+    header .site-nav button:hover {
+        background: #212121;
+        color: #FFFFFF;
+    }
+
+    header .site-nav a:visited {
+
+    }
+
+
+    
     header .site-nav ul :first-child,
     header .site-nav ul :last-child {
         margin: 0;
     }
+    
 
-    header .site-nav a {
-        padding: 0.5rem;
+
+
+    header .site-nav-list {
+      position: absolute;
+      background:#FFFFFF;
     }
+
+    header .site-nav-list ul {
+      list-style: none;
+    }
+    
+    
+    header .site-nav-list-columns {
+      display: flex;
+      align-items: stretch | flex-start;
+    }
+
+    header .site-nav-list-column {
+      padding: 2rem 4rem 2rem 1rem;
+      border: solid 1px #F3F3F3;
+    }
+
+
+    header .site-nav-list a {
+      padding: 0;
+      font-size: 1rem;
+    }
+
+    header .site-nav-list h4 {
+      font-size: 1.15rem;
+      padding: 0 0 1rem 0;
+    }
+
+
+    
+
+   
+    
+    
+    
+
+    
 
 
 
@@ -397,13 +461,22 @@
     Responsive
     */
 
+    /* 200% text zoom */
     @media screen and (max-width: 40rem) {
         footer .wrapper {
             grid-template-columns: minmax(0, 1fr);
-        }  
+        }
     } 
     
+    /* 125% text zoom */
+    @media screen and (max-width: 65rem) {
+      header {
+        /*
+        background: red;
+        */
+      }
 
+  } 
     
      
     
