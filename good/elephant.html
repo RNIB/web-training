@@ -31,36 +31,38 @@
       
       <div class="logo">
         <a href="#">
-          <img src="../assets/images/logo.png" alt="Home - Logo" width="48px">
+          <img src="../assets/images/logo.png" alt="Home - Logo">
         </a>
 
 
       </div>
       
+      <!-- TEMP DISABLE
+      <button aria-expanded="false">Menu</button>
+      -->  
       
       <nav aria-label="main" id="site-nav" class="site-nav">
-        
-        <button aria-expanded="false">Menu</button>
-        
-        <ul class="site-nav-top">
-          <li><a href="#1">Animals</a>
-            
-           
+        <h2 class="sr-only">Main Navigation</h2>
+        <ul class="site-nav-top disclosure-nav">
+          <li><button aria-expanded="true" aria-controls="id_animals_menu">
+            Animals
+          </button>
           <div class="site-nav-list">
-           <ul class="site-nav-list-columns">
+            <h3 class="sr-only">Animals Menu</h3>
+            <ul id="id_animals_menu" class="site-nav-list-columns">
               <div class="site-nav-list-column">
               <li>
-                  <h2>Pets</h2>
+                  <h4>Pets</h4>
                 <ul>
                   <li><a href="#">Cats</a></li>
                   <li><a href="#">Dogs</a></li>
                 </ul>
               </li>
             </div>
-
+    
             <div class="site-nav-list-column">
               <li>
-                  <h2>Wild Animals</h2>
+                  <h4>Wildlife</h4>
                 <ul>
                   <li><a href="#">Elephants</a></li>
                   <li><a href="#">Lions</a></li>
@@ -68,27 +70,27 @@
                 </ul>
               </li>
             </div>
-
+    
             <div class="site-nav-list-column">
               <li>
-                  <h2>Birds</h2>
+                  <h4>Birds</h4>
                 <ul>
-                  <li><a href="#">Bird 1</a></li>
-                  <li><a href="#">Bird 2</a></li>
-                  <li><a href="#">Bird 3</a></li>
+                  <li><a href="#">Lilac Breasted Roller</a></li>
+                  <li><a href="#">Grey Headed Kingfisher</a></li>
+                  <li><a href="#">Yellow Billed Stork</a></li>
                 </ul>
               </li>
             </div>
-
+    
           </ul>
-
+    
             </div><!-- site nav list end -->
           
           
-
-
+    
+    
           </li>
-          <li><a href="#4">Sponsor</a></li>
+          <li><a href="#4">Donate</a></li>
           <li><a href="#4">Shop</a></li>
         </ul>
       </nav>
@@ -232,8 +234,9 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
 -->
+  <script src="../js/main.js"></script>
+
 </body>
 
 </html>
