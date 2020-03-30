@@ -27,30 +27,75 @@
       <a class="skip-link" href="#content">Skip to content</a>
     
 
-    <div class="wrapper">
+      <div class="wrapper">
       
-      <div class="logo">
-        <a href="#">
-          <img src="../assets/images/logo.png" alt="Home - Logo" width="48px">
-        </a>
-
-
-      </div>
+        <div class="logo">
+          <a href="#">
+            <img src="../assets/images/logo.png" alt="Home - Logo">
+          </a>
+  
+  
+        </div>
+        
+        <!-- TEMP DISABLE
+        <button aria-expanded="false">Menu</button>
+        -->  
+        
+        <nav aria-label="main" id="site-nav" class="site-nav">
+          <h2 class="sr-only">Main Navigation</h2>
+          <ul class="site-nav-top disclosure-nav">
+            <li>
+              <button aria-expanded="true" aria-controls="id_animals_menu">Animals</button>
+            <div class="site-nav-list">
+              <h3 class="sr-only">Animals Menu</h3>
+              <ul id="id_animals_menu" class="site-nav-list-columns">
+                <div class="site-nav-list-column">
+                <li>
+                    <h4>Pets</h4>
+                  <ul>
+                    <li><a href="#">Cats</a></li>
+                    <li><a href="#">Dogs</a></li>
+                  </ul>
+                </li>
+              </div>
       
-      <div class="site-nav">
-        <nav aria-label="main">
-          <ul>
-            <li><a href="#1">Pets</a></li>
-            <li><a href="#2">Wild Animals</a></li>
-            <li><a href="#3">Birds</a></li>
-            <li><a href="#4">Sponsor a Pet</a></li>
+              <div class="site-nav-list-column">
+                <li>
+                    <h4>Wildlife</h4>
+                  <ul>
+                    <li><a href="#">Elephants</a></li>
+                    <li><a href="#">Lions</a></li>
+                    <li><a href="#">Zebras</a></li>
+                  </ul>
+                </li>
+              </div>
+      
+              <div class="site-nav-list-column">
+                <li>
+                    <h4>Birds</h4>
+                  <ul>
+                    <li><a href="#">Lilac Breasted Roller</a></li>
+                    <li><a href="#">Grey Headed Kingfisher</a></li>
+                    <li><a href="#">Yellow Billed Stork</a></li>
+                  </ul>
+                </li>
+              </div>
+      
+            </ul>
+      
+              </div><!-- site nav list end -->
+            
+            
+      
+      
+            </li>
+            <li><a href="#4">Donate</a></li>
             <li><a href="#4">Shop</a></li>
           </ul>
         </nav>
-
-
-      </div>
-    </div>
+        
+  
+      </div><!-- wrapper end -->
 
   </header>
 
@@ -109,14 +154,14 @@
   <footer>
 
     <div class="wrapper">
-
+      <h2 class="sr-only">Footer</h2>
       <div class="about">
-        <h2>About</h2>
+        <h3>About</h3>
         <p>Animal Guide is a fictional website for accessibility and usability testing purposes.</p>
       </div>
       
       <div class="quick-links">
-        <h2>Quick Links</h2>
+        <h3>Quick Links</h3>
         <nav aria-label="quick links">
           <ul>
             <li><a href="#">Accessibility</a></li>
@@ -127,7 +172,7 @@
       </div>
 
       <div class="contact">
-        <h2>Contact</h2>
+        <h3>Contact</h3>
         <p><a href="#email">hello@animal-guide.com</a></p>
         <nav class="social-links" aria-label="social links">
           <ul>
@@ -184,8 +229,9 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
--->
+  -->
+  <script src="../js/main.js"></script>
+
 </body>
 
 </html>

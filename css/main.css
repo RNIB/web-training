@@ -114,7 +114,6 @@
     }
 
 
-
     /*
     Header
     */
@@ -150,7 +149,7 @@
         display: block;
         padding: 0 1rem;
         margin-right: 4rem;
-        height: 2.2rem;
+        height: 2.5rem;
     }
 
     
@@ -166,7 +165,7 @@
     header .site-nav-top > ul, 
     header .site-nav-top > li {
         display: inline;
-        margin: 1em;
+        margin: 0 1em;
         padding: 0;
         font-size: 1.25rem;
         font-family: 'Open Sans SemiBold';
@@ -178,17 +177,34 @@
       line-height: 2.2rem;
     }
 
+    header .disclosure-nav {
+      display: flex;
+      align-items: center;
+    }
 
     header .site-nav-top a {
-      padding: 1rem;
+      padding: 1.5rem;
     }
 
     header .site-nav-top button {
       border: none;
       background: none;
       cursor: pointer;
-      padding: 1rem;
+      padding: 1.5rem;
+      display: flex;
     }
+
+    header .site-nav-top button::after {
+      content: "";
+      border-bottom: 1px solid #212121;
+      border-right: 1px solid #212121;
+      height: 0.5em;
+      margin-top: 0.25em;
+      margin-left: 0.75em;
+      width: 0.5em;
+      transform: rotate(45deg);
+    }
+
 
 
     header .site-nav a {
@@ -200,10 +216,10 @@
 
     }
 
-    header .site-nav a:hover,
-    header .site-nav button:hover {
-        background: #212121;
-        color: #FFFFFF;
+    header .site-nav-top a:hover,
+    header .site-nav-top button:hover {
+        background: #EEEEEE;
+        color: #212121;
     }
 
     header .site-nav a:visited {
@@ -214,7 +230,9 @@
     
     header .site-nav ul :first-child,
     header .site-nav ul :last-child {
-        margin: 0;
+      /*  
+      margin: 0;
+      */
     }
     
 
@@ -236,7 +254,7 @@
     }
 
     header .site-nav-list-column {
-      padding: 2rem 4rem 2rem 1rem;
+      padding: 2rem 4rem 2rem 1.5rem;
       border: solid 1px #F3F3F3;
     }
 
@@ -246,9 +264,16 @@
       font-size: 1rem;
     }
 
+    header .site-nav-list a:hover {
+      text-decoration: underline;
+      background: none;
+    }
+
     header .site-nav-list h4 {
       font-size: 1.15rem;
-      padding: 0 0 1rem 0;
+      padding: 0;
+      margin: 0 0 1rem 0;
+      font-weight: normal;
     }
 
 
@@ -276,7 +301,8 @@
         color: #E0E0E0;
     }
 
-    footer h2, h3 {
+    footer h2, 
+    footer h3 {
         font-size: 1.15rem;
         color: #EEEEEE;
     }
@@ -633,6 +659,25 @@
     
     
       
+
+    /*
+    BAD
+    */
+
+    /* Match menu */
+    .bad header .site-nav-list span {
+      font-size: 1.15rem;
+      padding: 0;
+      margin: 0 0 1rem 0;
+      display: inline-block;
+    }
+
+    .bad header .site-nav-list a:hover {
+      text-decoration: none;
+      background: none;
+    }
+
+
     
     
     
