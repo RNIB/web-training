@@ -106,6 +106,7 @@
 
     p {
         line-height: 1.75;
+        margin: 0;
     }
 
     ul {
@@ -451,13 +452,13 @@
     }
 
     .article-main h2 {
-        font-size: 1.5rem;
-        margin-top: 2.5rem;
+        font-size: 1.75rem;
+        margin: 2.5rem 0 0 0;
     }
 
     .article-main h3 {
-        font-size: 1.25rem;
-        margin-top: 1.5rem;
+        font-size: 1.5rem;
+        margin: 1.5rem 0 0 0;
     }
     
     .article-main p {
@@ -482,6 +483,35 @@
       padding: 0.75rem 0;
     }
 
+
+    /* Data Tables */
+
+    .data-table,
+    .data-table caption {
+      text-align: left;
+    }
+
+    .data-table caption {
+      margin: 1rem 0;
+    }
+
+    .data-table,
+    .data-table th,
+    .data-table td {
+      border-collapse: collapse;
+      border-spacing: 0;
+      border: 1px solid #999999;
+    }
+
+    .data-table th {
+      font-weight: 800;
+      background-color: #CCCCCC;
+    }
+
+    .data-table th,
+    .data-table td {
+      padding: 0.5rem;
+    }
 
   
     /*
@@ -676,6 +706,22 @@
       text-decoration: none;
       background: none;
     }
+
+    /* Match table */
+
+    
+    .caption {
+      display: block;
+      font-size: 1rem;
+      margin: 1rem 0;
+    }
+
+    .header {
+      font-weight: 800;
+      background-color: #CCCCCC;
+    }
+
+    
 
 
     

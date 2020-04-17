@@ -14,7 +14,7 @@
   
 </head>
 
-<body>
+<body class="bad">
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
@@ -31,36 +31,38 @@
       
       <div class="logo">
         <a href="#">
-          <img src="../assets/images/logo.png" alt="Home - Logo" width="48px">
+          <img src="../assets/images/logo.png" alt="Home - Logo">
         </a>
 
 
       </div>
       
+      <!-- TEMP DISABLE
+      <button aria-expanded="false">Menu</button>
+      -->  
       
       <nav aria-label="main" id="site-nav" class="site-nav">
-        
-        <button aria-expanded="false">Menu</button>
-        
-        <ul class="site-nav-top">
-          <li><a href="#1">Animals</a>
-            
-           
+        <h2 class="sr-only">Main Navigation</h2>
+        <ul class="site-nav-top disclosure-nav">
+          <li><button aria-expanded="true" aria-controls="id_animals_menu">
+            Animals
+          </button>
           <div class="site-nav-list">
-           <ul class="site-nav-list-columns">
+            <h3 class="sr-only">Animals Menu</h3>
+            <ul id="id_animals_menu" class="site-nav-list-columns">
               <div class="site-nav-list-column">
               <li>
-                  <h2>Pets</h2>
+                  <h4>Pets</h4>
                 <ul>
                   <li><a href="#">Cats</a></li>
                   <li><a href="#">Dogs</a></li>
                 </ul>
               </li>
             </div>
-
+    
             <div class="site-nav-list-column">
               <li>
-                  <h2>Wild Animals</h2>
+                  <h4>Wildlife</h4>
                 <ul>
                   <li><a href="#">Elephants</a></li>
                   <li><a href="#">Lions</a></li>
@@ -68,27 +70,27 @@
                 </ul>
               </li>
             </div>
-
+    
             <div class="site-nav-list-column">
               <li>
-                  <h2>Birds</h2>
+                  <h4>Birds</h4>
                 <ul>
-                  <li><a href="#">Bird 1</a></li>
-                  <li><a href="#">Bird 2</a></li>
-                  <li><a href="#">Bird 3</a></li>
+                  <li><a href="#">Lilac Breasted Roller</a></li>
+                  <li><a href="#">Grey Headed Kingfisher</a></li>
+                  <li><a href="#">Yellow Billed Stork</a></li>
                 </ul>
               </li>
             </div>
-
+    
           </ul>
-
+    
             </div><!-- site nav list end -->
           
           
-
-
+    
+    
           </li>
-          <li><a href="#4">Sponsor</a></li>
+          <li><a href="#4">Donate</a></li>
           <li><a href="#4">Shop</a></li>
         </ul>
       </nav>
@@ -133,6 +135,34 @@
   <h2>Distribution</h2>
   <p>African elephants are found in <a href="#s">Sub-Saharan Africa</a>.</p>
 
+
+  <table class="data-table">
+    <span class="caption">Regional Population Estimates 2015:</span>
+    <tr>
+      <td class="header"></td>
+      <td class="header">West Africa</td>
+      <td class="header">Central</td>
+      <td class="header">Eastern</td>
+      <td class="header">Southern</td>
+    </tr>
+    <tr>
+      <td class="header">Numbers</td>
+      <td>11,500</td>
+      <td>24,100</td>
+      <td>86,400</td>
+      <td>293,400</td>
+    </tr>
+    <tr>
+      <td class="header">Percentage</td>
+      <td>3</td>
+      <td>6</td>
+      <td>20</td>
+      <td>70</td>
+    </tr>
+  </table>
+
+
+
   <H3>Habitat</H3>
   <p>Their main habitat is scrubland and arid regions. Also found in tropical rainforests and woodlands where food is available. </p> 
 
@@ -157,14 +187,14 @@
   <footer>
 
     <div class="wrapper">
-
+      <h2 class="sr-only">Footer</h2>
       <div class="about">
-        <h2>About</h2>
+        <h3>About</h3>
         <p>Animal Guide is a fictional website for accessibility and usability testing purposes.</p>
       </div>
       
       <div class="quick-links">
-        <h2>Quick Links</h2>
+        <h3>Quick Links</h3>
         <nav aria-label="quick links">
           <ul>
             <li><a href="#">Accessibility</a></li>
@@ -175,7 +205,7 @@
       </div>
 
       <div class="contact">
-        <h2>Contact</h2>
+        <h3>Contact</h3>
         <p><a href="#email">hello@animal-guide.com</a></p>
         <nav class="social-links" aria-label="social links">
           <ul>
@@ -232,8 +262,9 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
 -->
+  <script src="../js/main.js"></script>
+
 </body>
 
 </html>
