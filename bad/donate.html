@@ -1,30 +1,28 @@
 <!doctype html>
-<html class="no-js" lang="en-GB">
-
-<head>
-  <meta charset="utf-8">
-  <title>Lion</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- place favicon.ico in the root directory -->
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="../css/main.css">
-
-  
-</head>
-
-<body>
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-  <!-- Content -->
-
-  <header>
-
+<html class="bad" lang="en-GB">
+  <head>
+    <title>Donate</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
     
-      <a class="skip-link" href="#content">Skip to content</a>
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="../assets/css/custom.css" rel="stylesheet">
+    <style>
+     
+    </style>
+    
+  </head>
+  
+  
+  <body>
+    
+    <header>  
+       
+        <a class="skip-link" href="#content">Skip to content</a>
     
 
       
@@ -98,64 +96,147 @@
 
     </div><!-- /.wrapper -->
 
+    </header><!-- /.header -->
+    
+    
+   
+    
+    
+    
+    <div class="container my-5">
 
-
-
-  </header>
-
-
-<main id="content">
-
-  <div class="article-banner">
-
-      <h1>Lion</h1>
-
-      <img src="../assets/images/animal-africa-zoo-lion-33045.jpg" 
-      alt="close up of a male lion looking into the distance">
-
+      
+  <div class="pb-2">
+    <h1>Donate</h1>
+    <p>
+        Our work is funded entirely by public donations. 
+        Your support is vital if we are to make a lasting difference to animals' lives. 
+        Your gift today, whatever sum you choose to give will help us save animals.
+    </p>
   </div>
 
-  <div class="article-main">
-
-    <h2>Scientific name</h2>
-    <p>Panthera leo</p>
-    
-    <h2>Appearance</h2>
-    <p>The lion is a large cat with fur that ranges in colour from a light beige to grey and dark brown. Males have broader heads and a large mane of hair that covers their head, neck and shoulders.</p>
-
-    <h2>Distribution</h2>
-    <p>Lions are found in <a href="#s">Sub-Saharan Africa</a> and in Asia.</p>
-    
-    <H3>Habitat</H3>
-    <p>Lions live mainly in savannah, grasslands and hot areas. They can also live in open woodland areas and the lower areas of mountains. </p>
-    
   
 
-    <figure role="figure" aria-label="A female lion chasing a baby deer.">
-          <img src="../assets/images/picture-of-tigress-on-green-grass-field-226368.jpg" alt="A female lion chasing a baby deer.">
-        <figcaption>
-          A female lion chasing a baby deer.
-        </figcaption>
-    </figure> 
+  <form class="needs-validation" novalidate>
+    
+    <div class="form-group row my-4">
+        <label class="col-sm-5 col-form-label">
+            Amount
+        </label>
+        <div class="col-sm-7">       
+                <input type="text" class="form-control" id="amount" placeholder="£10" required>
+                <small class="text-muted">
+
+                </small>
+                <div class="invalid-feedback">
+                    Required
+                </div>
+                <div class="custom-control custom-radio mt-3">
+                    <input id="one-off" name="paymentType" type="radio" class="custom-control-input" checked required>
+                    <label class="custom-control-label" for="one-off">One off payment</label>
+                  </div>
+                  <div class="custom-control custom-radio">
+                    <input id="monthly" name="paymentType" type="radio" class="custom-control-input" required>
+                    <label class="custom-control-label" for="monthly">Monthly</label>
+                  </div>
+          </div><!-- /.col -->   
+    </div><!-- /.row -->
+    
+      
+    <div class="form-group row my-4">
+        <label class="col-sm-5 col-form-label">
+             Title
+        </label>
+        <div class="col-sm-7">       
+            <select class="custom-select d-block w-100" id="title-name" required>
+                <option value="">Choose...</option>
+                <option>Mr</option>
+                <option>Miss</option>
+                <option>Mrs</option>
+                <option>Dr</option>
+              </select>
+                <small class="text-muted">
+                    
+                </small>
+                <div class="invalid-feedback">
+
+                </div>
+          </div><!-- /.col -->   
+    </div><!-- /.row -->     
+
+    <div class="form-group row my-4">
+        <label class="col-sm-5 col-form-label">
+                First name
+        </label>
+        <div class="col-sm-7">       
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <small class="text-muted">
+                    
+                </small>
+                <div class="invalid-feedback">
+
+                </div>
+          </div><!-- /.col -->   
+    </div><!-- /.row --> 
+    
+    <div class="form-group row my-4">
+        <label class="col-sm-5 col-form-label">
+            Last name
+        </label>
+        <div class="col-sm-7">       
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <small class="text-muted">
+                    
+                </small>
+                <div class="invalid-feedback">
+
+                </div>
+          </div><!-- /.col -->   
+    </div><!-- /.row --> 
+    
+    <div class="form-group row my-4">
+            <label class="col-sm-5 col-form-label">
+                Email <span class="text-muted">(Optional)</span>
+        </label>
+        <div class="col-sm-7">       
+            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                <small class="text-muted">
+                    
+                </small>
+                <div class="invalid-feedback">
+
+                </div>
+          </div><!-- /.col -->   
+    </div><!-- /.row --> 
+    
+    <div class="my-4">
+     <div class="form-check form-check-inline">
+        <input type="checkbox" class="form-check-input" id="display-anon">
+        <label class="form-check-label" for="display-anon">
+            Display my donation as anonymous
+        </label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="rec-updates">
+        <label class="form-check-label" for="rec-updates">
+            Recieve updates
+        </label>
+      </div>
+    </div>
+
+
+    <button class="btn btn-primary btn-lg btn-block" type="submit">Donate Now</button>
+    
+
+    </form>
     
 
 
-    <h2>Feeding habits</h2>
-    <p>A prey animal, lions feed on a variety of other animals including wildebeest, zebra, warthog and certain types of small deer including the Thomson’s gazelle, gerenuk and impala.</p>    
 
-</div><!-- article-main end -->
-
-</main>
+</div><!-- /.container -->
 
 
-
-
-
-  
-
-
-
-  <footer>
+<footer>
 
     <div class="wrapper">
       <h2 class="sr-only">Footer</h2>
@@ -226,16 +307,11 @@
   </footer>
 
 
-  
-<!-- Scripts -->
-  <!-- Temp Disable
-  <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-  -->
-  <script src="../js/main.js"></script>
 
-</body>
-
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+      <script>window.jQuery || document.write('<script src="/assets/js/jquery.slim.min.js"><\/script>')</script>
+      <script src="../assets/js/bootstrap.bundle.min.js" ></script>
+        <script src="../assets/js/main.js"></script>
+        <script src="../assets/js/form-validation.js"></script>
+    </body>
 </html>
