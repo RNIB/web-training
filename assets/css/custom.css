@@ -442,3 +442,14 @@ header .wrapper {
     .card-footer {
         padding: 1rem 0;
     }
+
+
+
+
+    /*
+    BAD
+    */
+
+    .bad table .header {
+      font-weight: bold;
+    }
